@@ -1,0 +1,15 @@
+<script>
+    parts = 0
+    function randomSpot(){
+        parts = parts + 1
+        randomX = Math.random() * 100
+        randomY = Math.random() * 100
+        document.getElementById("amountOfParts").innerHTML = `<h4 id="amountOfParts">Parts: ${parts} / 20</h1>`
+        document.getElementById("swordParts").innerHTML = `<button style="top: ${randomY}% ; left: ${randomX}%; position: absolute; border-color: white; background-color: white" id="swordParts" onclick="randomSpot()">Hello</button>`
+    }
+</script>
+<h1 id="amountOfParts">Parts: 0 / 20</h1>
+<div id="swordParts">
+    <button style="left: 50%; top: 50% ; position: absolute; border-color: white; background-color: white;" onclick="randomSpot()">Hello</button>
+</div>
+
